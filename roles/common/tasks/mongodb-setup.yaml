@@ -19,7 +19,7 @@
     msg: "product count:{{product_count}}"
 - name: "load catalogue data"
   ansible.builtin.command: mongo --host mongodb.sowjanyaaws.online < /app/schema/{{component}}.js
-  when: component=="catalogue" and product_count.stdout == "0"
+  when: component=="catalogue" and products_count.stdout == "0"
 - name: "load users data"
   ansible.builtin.command: mongo --host mongodb.sowjanyaaws.online < /app/schema/{{component}}.js
   when: component=="user" and users_count.stdout == "0"
