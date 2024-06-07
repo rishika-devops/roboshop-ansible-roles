@@ -27,3 +27,6 @@ web.sowjanyaaws.online
 
 [payment]
 payment.sowjanyaaws.online
+
+[all:vars]
+ansible_password=DevOps321
