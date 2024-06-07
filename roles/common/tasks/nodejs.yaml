@@ -2,8 +2,8 @@
   ansible.builtin.shell: dnf module disable nodejs -y ; dnf module enable nodejs:18 -y ;
 - name: installing nodejs18 version
   ansible.builtin.dnf:
-  name: nodejs
-  state: present
+   name: nodejs
+   state: present
 - name: installing dependancies in app directory
   ansible.builtin.command: npm install
   args:
