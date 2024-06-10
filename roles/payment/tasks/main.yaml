@@ -5,7 +5,7 @@
 - name: python setup
   ansible.builtin.import_role:
    name: common
-   tasks_from: app-setup
+   tasks_from: python-setup
 - name: service setup
   ansible.builtin.import_role:
    name: common
