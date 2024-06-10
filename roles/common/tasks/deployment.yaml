@@ -32,7 +32,7 @@
 - name: install dependancies
   tags:
   - deployment
-  ansible.builtin.commnad: npm install
+  ansible.builtin.command: npm install
   args:
    chdir: /app
 - name: "restart {{componet}}"
