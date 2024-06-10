@@ -35,9 +35,9 @@
   ansible.builtin.command: npm install
   args:
    chdir: /app
-- name: "restart {{componet}}"
+- name: "restart {{component}}"
   tags:
   - deployment
   ansible.builtin.service:
-   name: "{{componet}}"
+   name: "{{component}}"
    state: restarted
