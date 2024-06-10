@@ -11,8 +11,3 @@
 - name: loading cities data
   ansible.builtin.shell: mysql -h mysql.sowjanyaaws.online -uroot -p{{mysql_password}} < /app/schema/shipping.sql
   when: schema.stdout != "1"
-- name: restarting shipping
-  ansible.builtin.service:
-    name: shipping
-    state: restarted
-    enabled: yes
