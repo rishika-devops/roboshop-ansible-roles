@@ -1,4 +1,4 @@
-tasks:
+
 - name: configuring yum repos of erlang
   ansible.builtin.shell: curl -s https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh | bash
   
