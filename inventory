@@ -31,3 +31,5 @@ payment.sowjanyaaws.online
 [dispatch]
 dispatch.sowjanyaaws.online
 
+[all:vars]
+ansible_password=DevOps321
